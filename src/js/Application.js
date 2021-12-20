@@ -19,7 +19,8 @@ export default class Application extends EventEmitter {
   }
 
   addBananas() {
-    const banana = [this.banana + this.emojis];
-    console.log(banana);
+    const array = [this.emojis[1], this.banana];
+    const map1 = array.map((banana) => this.emojis[1] + banana);
+    console.log(map1);
   }
 }
