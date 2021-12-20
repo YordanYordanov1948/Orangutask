@@ -15,7 +15,11 @@ export default class Application extends EventEmitter {
   }
   setEmojis(emojis) {
     this.emojis = emojis;
+    console.log(emojis);
   }
 
-  addBananas() {}
+  addBananas() {
+    const banana = [this.banana + this.emojis];
+    console.log(banana);
+  }
 }
